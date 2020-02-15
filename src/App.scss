@@ -1,0 +1,78 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+.app {
+  max-width: 60rem;
+  min-width: 375px;
+  margin: 0 auto;
+  display: flex;
+
+  
+
+  .lang_btn {
+    padding: 0.5rem 2rem;
+    // border: 1px solid rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    }
+
+  
+ 
+
+  .section {    
+    min-height: 1px;
+    min-width: 1px;
+    margin: 0;
+    header{
+      width: 23rem;
+      margin: 0 auto;
+    }
+   
+  }
+
+
+  .img-left{
+    width: 10rem;
+  }
+
+  .main{
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 2rem;
+   
+
+  }
+
+  .img-right{
+    width: 18rem;
+   
+  }
+
+  @media (max-width:700px){
+      .img-left{
+
+        display: none;
+        
+      }
+      .main{
+        flex-grow: 1;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 20;
+        margin-top: 160px;
+        
+
+      
+      }
+
+      .img-right{
+        position: absolute;
+        opacity: 0.5;
+        width: 75vw;
+        top:0px;
+        left:0px;
+      }
+    }
+}

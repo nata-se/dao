@@ -1,0 +1,146 @@
+.divination {
+    .question{
+        display: block;
+        
+        &.hide{
+            display: none;
+
+        }
+
+    }
+
+    .reveal_btn {
+        display: inline-block;
+        padding: 0.5rem 2rem;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.8); 
+        margin-top: 1rem;   
+       
+    }
+    .chapter_btn{
+        display: none;
+    }
+
+    .quoteContainer{
+        max-width: 20rem;
+        margin: 0 auto;
+
+        .quoteBlock{
+            margin-top: 2rem;
+            width: 20rem;
+            text-align: left;
+            
+                    
+            .poem-line {
+                height: 0;
+                transform: translateY(175vw);
+                line-height: 1.8em;
+                text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
+    
+                &.show {
+                    margin: .3rem 0;
+                    height: initial;
+                    transform: translateY(-0);
+                    transition: 1s;
+                    transition-timing-function: cubic-bezier(.01,.59,.98,.76);
+                }
+                
+                &.highlight {
+                    text-shadow: rgba(0, 0, 0, .5) 1px 0 2px;
+                }
+            }
+            
+        }    
+
+        .details {
+            margin-top: 3rem;
+
+           
+        }
+
+    }
+    .again_btn{
+        margin-top: 2rem;
+
+
+        .zen_btn{
+            width: 10rem;
+            height: 3rem;
+            border: 1px solid rgba(0, 0, 0, 0.6);
+            padding: 0.5rem 2rem;
+            margin: 0 auto;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+    
+            .try_again{
+                width: 3srem;
+                height:3rem;
+                
+            }
+        }
+    }
+    
+
+    @media (max-width: 385px) {
+
+        
+
+        .quoteContainer{
+            max-width: 100vem;
+            margin: 0 auto;
+            
+    
+            .quoteBlock{
+                margin-top: 2rem;
+                width: 100vw;
+                text-align: left;
+                        
+                .poem-line {
+                    height: 0;
+                    transform: translateY(175vw);
+    
+                    text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
+        
+                    &.show {
+                        margin: .3rem 0;
+                        height: initial;
+                        transform: translateY(0);
+                        transition: 1s;
+                        transition-timing-function: cubic-bezier(.45,.11,.66,1.72);
+                    }
+                    
+                    &.highlight {
+                        text-shadow: rgba(0, 0, 0, .5) 1px 0 2px;
+                    }
+                }
+            }    
+    
+            .details {
+                margin-top: 3rem;
+    
+                button {
+                    cursor: pointer;
+                }
+            }
+    
+        }
+        
+
+
+        // .quoteContainer{
+        //     border: 1px solid green;
+        //     width: 100vw;
+        //     margin: 0 auto;
+        //     width: 200px;
+        
+    
+        // }
+    }
+
+}
+
